@@ -7,7 +7,7 @@ public class Employee
 		//  current values of the feilds
 	private static int maxId = 0;
 	private int id; // 1 -55 68 0 (primitive)
-	private String fname; // Catherine char(<- base data type) String is calss so it must be caplitilized
+	private String fname; // Catherine char(<- base data type) String is class so it must be capatilized
 	private String lname; // Radin
 	private double salary; // 1.10 -33.43 0.0 68.9 (primitive)
 	private boolean has401K;
@@ -16,7 +16,7 @@ public class Employee
 
 	//Behaviors  / methods -- what can it do? / must have () to become a method
 		//constructor (is a method)
-	// this refers to the feild~
+	// this refers to the field~
 
 	public Employee(String fname, String lname, double salary, boolean has401K, int companyId, int healthPlanId)
 	{
@@ -52,7 +52,7 @@ public class Employee
 		return lname;
 	}
 
-	public void setLname(String)
+	public void setLname(String lname)
 	{
  		this.lname = lname;
 	}
@@ -73,7 +73,7 @@ public class Employee
 	}
 	public void setHas401K(boolean has401K)
 	{
-		this.has401K = has401K
+		this.has401K = has401K;
 	}
 	public int getCompanyId()
 	{
@@ -87,9 +87,14 @@ public class Employee
 	{
 		return healthPlanId;
 	}
-	public void setHelthPlanId(int healthPlanId)
+	public void setHealthPlanId(int healthPlanId)
 	{
 		this.healthPlanId = healthPlanId;
+	}
+	//other methods
+	public String returnFullName()
+	{
+		return fname + " " + lname;
 	}
 
 } //class ending
